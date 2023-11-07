@@ -18,13 +18,50 @@
   background-color: #fff;
 
   /* Because we want header to be sticky */
-  height: 9.6rem;
+  height: 5rem;
   padding: 0 4.8rem;
   position: relative;
 }
 
 .logo {
-  height: 2.2rem;
+  height: 4rem;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[id="icon-clear"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  /* height: 5rem; */
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-home {
+  margin-top: 9.6rem;
 }
 
 /* ************************ */
@@ -73,7 +110,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 8rem;
+  height: 5rem;
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
@@ -94,11 +131,11 @@
   border-bottom: 1px solid #fff;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .section-home {
     background-color: ;
   }
-}
+} */
 
 .home {
   max-width: 130rem;
@@ -118,6 +155,7 @@
 
 .home-img {
   width: 70%;
+  border-radius: 50%;
 }
 
 /* ************************ */
@@ -129,9 +167,12 @@
   border-bottom: 1px solid #fff;
 }
 
+.work-about a {
+  text-decoration: none;
+}
+
 .work-img {
-  width: 40rem;
-  height: 25rem;
+  width: 100%;
 }
 
 /* ************************ */
@@ -146,6 +187,8 @@
 .service {
   font-size: 3.4rem;
   text-align: center;
+  padding-bottom: 4rem;
+  text-transform: uppercase;
 }
 
 .what-logo {
@@ -196,11 +239,186 @@
 }
 
 .brand-icon {
-  width: 10%;
+  width: 5%;
   transition: all 0.4s;
+  fill: #fff;
 }
 
 .brand-icon:hover {
   transform: translateY(1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+#icon-html5:hover {
+  fill: #e34f26;
+  /* style:fill: var(--color2, #e34f26); */
+}
+
+#icon-css3:hover {
+  fill: #1572b6;
+}
+
+#icon-javascript:hover {
+  fill: #f7df1e;
+}
+
+#icon-react:hover {
+  fill: #61dafb;
+}
+
+/* ************************ */
+/* SECTION CONNECT */
+/* ************************ */
+
+.section-connect {
+  padding: 4.8rem 0 9.6rem 0;
+  /* border-bottom: 1px solid #fff; */
+}
+
+.connect .heading-primary {
+  text-align: center;
+}
+
+.connect-form {
+  display: flex;
+  flex-direction: column;
+  margin: 7rem auto 2rem auto;
+  padding: 5rem 2rem 2.5rem 2rem;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.connect-form label {
+  text-align: start;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #000;
+}
+
+.connect-form input,
+.connect-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #000;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(255, 0, 187);
+  margin-bottom: 2rem;
+}
+
+.connect-form input::placeholder {
+  color: #c5c1c1;
+}
+
+.connect *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.btn--form {
+  background-color: #c778dd;
+  color: #000;
+  padding: 1.2rem;
+  width: 20rem;
+  margin: auto;
+}
+
+/* ************************ */
+/* FOOTER */
+/* ************************ */
+
+.footer {
+  padding: 4.8rem 0 9.6rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+.all-footer {
+  width: 70rem;
+  text-align: center;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 9.6rem;
+}
+
+.footer-icon {
+  width: 50%;
+  /* style: "fill: var(--color3, #fff)"; */
+  fill: #fff;
+}
+
+#icon-instagram:hover {
+  /* style: "fill: var(--color3, #e4405f)"; */
+  fill: #e4405f;
+}
+
+#icon-x:hover,
+#icon-github:hover {
+  fill: #000;
+}
+
+#icon-linkedin:hover {
+  fill: #0077b5;
+  /* style:"fill: var(--color3, #0077b5)" */
+}
+
+#icon-telegram:hover {
+  fill: #2ca5e0;
+  /* style:"fill: var(--color3, #2ca5e0)" */
+}
+
+#icon-fiverr:hover {
+  fill: #1dbf73;
+  /* style:fill: var(--color1, #1dbf73); */
+}
+
+#icon-indeed:hover {
+  fill: #2164f3;
+  /* style:fill: var(--color1, #2164f3); */
+}
+
+#icon-upwork:hover {
+  fill: #6fda44;
+  /* style:fill: var(--color1, #6fda44); */
+}
+
+.copyright {
+  font-size: 1.8rem;
+  color: #c778dd;
+}
+
+/* ************************ */
+/* SECTION IMAGE */
+/* ************************ */
+
+.section-image {
+  padding: 4.8rem 0 9.6rem 0;
+  text-align: center;
+}
+
+.main-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.land-image {
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
 }

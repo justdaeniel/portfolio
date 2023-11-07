@@ -1,0 +1,129 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em - 16px */
+
+/* ************************ */
+/* BELOW 1216px (Tablets)*/
+/* ************************ */
+
+@media (max-width: 76em) {
+  html {
+    /* font-size: 9px;
+        9px / 16px = 56.25% 
+        Percentage of user's browser fot-size setting*/
+    font-size: 56.25%;
+  }
+  .home {
+    max-width: 120rem;
+    text-align: center;
+  }
+  .home-description {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
+
+/* ************************ */
+/* BELOW 1072px (Tablets)*/
+/* ************************ */
+
+@media (max-width: 67em) {
+  .design-about,
+  .develop-about {
+    font-size: 2rem;
+  }
+}
+
+/* ************************ */
+/* BELOW 992px (Tablets)*/
+/* ************************ */
+
+@media (max-width: 62em) {
+  html {
+    /* font-size = 8px */
+    font-size: 50%;
+  }
+
+  .home-description {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+
+/* ************************ */
+/* BELOW 944px (Tablets)*/
+/* ************************ */
+
+/* @media (max-width: 59em) {
+  html {
+    font-size = 8px
+    font-size: 50%;
+  } */
+
+/* MOBILE NAVIGATION
+  .btn-mobile-nav {
+    display: block;
+  } */
+
+/* ************************ */
+/* BELOW 832px ()*/
+/* ************************ */
+
+@media (max-width: 52em) {
+  .design-about,
+  .develop-about {
+    font-size: 1.8rem;
+  }
+}
+
+/* ************************ */
+/* BELOW 704px (pHONES)*/
+/* ************************ */
+
+@media (max-width: 44em) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .home-img {
+    width: 50%;
+  }
+
+  .featured-works {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .work-img-box {
+    text-align: center;
+  }
+
+  .work-img {
+    width: 50%;
+  }
+
+  .what-logo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sect-what {
+    width: 60%;
+  }
+
+  .connect-form {
+    width: 50%;
+  }
+}
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Line Heights:
+Defaults: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
