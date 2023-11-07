@@ -79,6 +79,10 @@
 /* ************************ */
 
 @media (max-width: 44em) {
+  #nav-work {
+    display: none;
+  }
+
   .home {
     grid-template-columns: 1fr;
     gap: 4.8rem;
