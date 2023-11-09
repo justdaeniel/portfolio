@@ -76,7 +76,7 @@
 .main-nav-list.nav-contact:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
-  color: #fff;
+  color: #c778dd;
   background-color: #000;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .home-img {
-  width: 70%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -318,12 +318,23 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
+#message {
+  height: 8rem;
+  resize: none;
+}
+
 .btn--form {
   background-color: #c778dd;
   color: #000;
   padding: 1.2rem;
   width: 15rem;
   margin: auto;
+  cursor: pointer;
+}
+
+.btn--form:hover {
+  background-color: #000;
+  color: #c778dd;
 }
 
 /* ************************ */

@@ -68,3 +68,52 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+///////////////////////////////////////////////////////////
+// Send  Email
+
+const connectForm = document.querySelector("#connect-form");
+const submitBtn = document.querySelector(".btn--form");
+const nameInput = document.querySelector("#full-name");
+const emailInput = document.querySelector("#email");
+const messageInput = document.querySelector("#message");
+
+// Get needed data from EmaiLJS
+const publicKey = "IlTw1CnaD5q7rW0ci";
+const serviceID = "service_m9xvach";
+const templateID = "template_2894wg8";
+
+// Initialize email JS with Public Key
+emailjs.init(publicKey);
+
+// Add Submit event to the form
+connectForm.addEventListener("submit", (e) => {
+  // Prevent form default behaviour
+  e.preventDefault();
+  // Change button text
+  submitBtn.innerText = "Just A Moment...";
+  // Get all input field values
+  const inputFields = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  //  Send the email
+  //  (Add Service, template ID and input field values)
+  emailjs.send(serviceID, templateID, inputFields).then(
+    () => {
+      // Change button text
+      submitBtn.innerText = "Message Sent Successfully";
+      // Clear out all input fields
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+    },
+    (error) => {
+      // Console log the error
+      console.log(error);
+      // Change button text
+      submitBtn.innerText = "Something went wrong";
+    }
+  );
+});
