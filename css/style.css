@@ -157,12 +157,19 @@
   align-items: center;
 }
 
+.work-list {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
 .work-about a {
   text-decoration: none;
 }
 
 .work-img {
-  width: 100%;
+  width: 50rem;
+  height: 29.5rem;
 }
 
 /* ************************ */
@@ -315,7 +322,7 @@
   background-color: #c778dd;
   color: #000;
   padding: 1.2rem;
-  width: 20rem;
+  width: 15rem;
   margin: auto;
 }
 
