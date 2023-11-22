@@ -167,6 +167,14 @@
   text-decoration: none;
 }
 
+.work-description {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+}
+
 .work-img {
   width: 50rem;
   height: 29.5rem;
@@ -219,14 +227,14 @@
 
 .design-text,
 .develop-text {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   color: #000;
 }
 
 .design-about,
 .develop-about {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #545353;
 }
 
@@ -319,7 +327,9 @@
 }
 
 #message {
-  height: 8rem;
+  padding: 1.2rem;
+  padding-bottom: 8rem;
+  /* height: 8rem; */
   resize: none;
 }
 
@@ -358,7 +368,7 @@
 }
 
 .footer-icon {
-  width: 50%;
+  width: 30%;
   /* style: "fill: var(--color3, #fff)"; */
   fill: #fff;
 }
