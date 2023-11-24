@@ -175,6 +175,12 @@
     width: 100%;
     height: 100%;
   }
+
+  .footer-icon {
+    width: 50%;
+    /* style: "fill: var(--color3, #fff)"; */
+    fill: #fff;
+  }
 }
 
 /* - FONT SIZE SYSTEM (px)
