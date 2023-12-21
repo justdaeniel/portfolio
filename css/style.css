@@ -180,6 +180,31 @@
   height: 29.5rem;
 }
 
+.code-lang {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.code-lang:link,
+.code-lang:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #545353;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  padding: 1rem;
+}
+
+.code-lang:hover,
+.code-lang:active {
+  color: #c778dd;
+}
+
 /* ************************ */
 /* SECTION SERVICE */
 /* ************************ */
