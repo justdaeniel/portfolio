@@ -1,11 +1,11 @@
-///////////////////////////////////////////////////////////
-// Smooth scrolling animation
+/////////////////////////////////////////////////////////// Sticky Navigation
 
 const sectionHomeEl = document.querySelector(".section-home");
 
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
+    console.log(ent);
 
     if (ent.isIntersecting === false) {
       // console.log(ent);
@@ -15,7 +15,7 @@ const obs = new IntersectionObserver(
     }
 
     if (ent.isIntersecting) {
-      /// console.log(ent);
+      // console.log(ent);
       console.log("not intersecting");
 
       document.body.classList.remove("sticky");
@@ -69,7 +69,6 @@ allLinks.forEach(function (link) {
   });
 });
 
-///////////////////////////////////////////////////////////
 // Send  Email
 
 const connectForm = document.querySelector("#connect-form");
